@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
+      - apt-get update -q && apt-get install -qy --no-install-recommends python-dev default-jdk
       - npm run build
-
 artifacts:
-    files: build/*
+    files: 'build/*'
