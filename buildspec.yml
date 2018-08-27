@@ -7,4 +7,5 @@ phases:
   build:
     commands:
       - npm run build
+      - echo $S3_BUCKET_NAME
       - aws s3 sync build/ s3://$S3_BUCKET_NAME
