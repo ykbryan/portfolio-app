@@ -9,4 +9,8 @@ phases:
   build:
     commands:
       - npm run build
+  post_build:
+    commands:
       - aws s3 sync build/ $S3_BUCKET_NAME
+      - aws cloudfront create-invalidation --distribution-id=E1T48ODXMIKJ5P --paths /
+      - echo 'DONE'
