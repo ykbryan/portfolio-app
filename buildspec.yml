@@ -7,5 +7,12 @@ phases:
   build:
     commands:
       - npm run build
+  post_build:
+    commands:
+      - rm -r !(build)
+    finally:
+      - cd build
+      - mv * ../
+
 artifacts:
-    files: 'build/**/*'
+    files: '**/*'
