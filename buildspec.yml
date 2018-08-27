@@ -9,7 +9,8 @@ phases:
       - npm run build
   post_build:
     commands:
-      - rm -r !(build)
+      - shopt -s extglob
+      - rm -r !("build/*")
     finally:
       - cd build
       - mv * ../
