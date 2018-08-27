@@ -5,6 +5,7 @@ phases:
     commands:
       - aws --version
       - echo $S3_BUCKET_NAME
+      - echo $CLOUDFRONT_DISTRIBUTION
       - npm install
   build:
     commands:
