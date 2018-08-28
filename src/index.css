@@ -3,3 +3,13 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+header ul.menu {
+  padding: 0;
+}
+header ul.menu li {
+  display: inline;
+  padding: 10px;
+}
+header ul.menu li a{
+  color: #ffffff
+}
