@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'reactstrap'
 import { CSSTransitionGroup } from 'react-transition-group'
 import '../styles/worksStyle.css'
 
@@ -11,8 +12,8 @@ const Works = () => {
       transitionEnter={false}
       transitionLeave={false}>
       <div>
-        Works
-        </div>
+        <Button color="danger">Works</Button>
+      </div>
     </CSSTransitionGroup>
   )
 }
