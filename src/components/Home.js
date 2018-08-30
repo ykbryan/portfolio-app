@@ -1,21 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { CSSTransitionGroup } from 'react-transition-group'
 import '../styles/homeStyle.css'
-
-
-const Home = () => {
-  return (
-    <CSSTransitionGroup
-      transitionName="homeTransition"
-      transitionAppear={true}
-      transitionAppearTimeout={500}
-      transitionEnter={false}
-      transitionLeave={false}>
-      <div>
-        Home
+class Home extends Component {
+  render() {
+    return (
+      <CSSTransitionGroup
+        transitionName="homeTransition"
+        transitionAppear={true}
+        transitionAppearTimeout={500}
+        transitionEnter={false}
+        transitionLeave={false}>
+        <div>
+          Home
       </div>
-    </CSSTransitionGroup>
-  )
+      </CSSTransitionGroup>
+    );
+  }
 }
-
-export default Home
+export default Home;
